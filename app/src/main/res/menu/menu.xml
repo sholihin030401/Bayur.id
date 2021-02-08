@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homes"
+        android:title="@string/home"
+        android:icon="@drawable/home_icon"
+        app:cnb_iconColor="@color/colorPrimary"/>
+
+    <item
+        android:id="@+id/product"
+        android:title="@string/produk"
+        android:icon="@drawable/product_icon"
+        app:cnb_iconColor="@color/colorPrimary"/>
+
+    <item
+        android:id="@+id/partner"
+        android:title="@string/mitra"
+        android:icon="@drawable/partner_icon"
+        app:cnb_iconColor="@color/colorPrimary"/>
+
+    <item
+        android:id="@+id/profile"
+        android:title="@string/profil"
+        android:icon="@drawable/profile_icon"
+        app:cnb_iconColor="@color/colorPrimary"/>
+</menu>

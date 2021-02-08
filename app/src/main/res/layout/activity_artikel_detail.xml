@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.ArtikelDetail">
+
+    <ImageView
+        android:id="@+id/img_artikel_detail"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/tempe"
+        android:scaleType="centerCrop"
+        android:alpha="0.85"/>
+
+    <TextView
+        android:id="@+id/txtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment"
+        style="@style/titleSubSet"
+        android:layout_marginTop="15dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="22dp">
+
+        <TextView
+            android:id="@+id/txcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_margin="5dp"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

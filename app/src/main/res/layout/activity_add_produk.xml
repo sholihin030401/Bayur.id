@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".produk.AddProdukActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <View
+        style="@style/headerContent"/>
+
+    <TextView
+        android:id="@+id/tp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tambah_produk"
+        style="@style/titleSet"/>
+
+    <TextView
+        android:id="@+id/pg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pilih_gambar"
+        android:layout_below="@id/tp"
+        style="@style/titleSubSet"
+        android:layout_marginTop="70dp"/>
+
+    <ImageView
+        android:id="@+id/add_img_produk"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_camera_alt"
+        android:background="@drawable/edt_text"
+        android:padding="8dp"
+        android:layout_below="@id/pg"
+        android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:id="@+id/np"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nama_produk"
+        style="@style/titleSubSet"
+        android:layout_below="@id/add_img_produk"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/namaproduk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/masukkan_nama_produk"
+        style="@style/EditTextSet"
+        android:layout_below="@id/np"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/kp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kategori_produk"
+        style="@style/titleSubSet"
+        android:layout_below="@id/namaproduk"
+        android:layout_marginTop="30dp"/>
+
+    <Spinner
+        android:id="@+id/kategoriproduk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kp"
+        android:entries="@array/kategori_produk"
+        style="@style/EditTextSet"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deskripsi_produk"
+        style="@style/titleSubSet"
+        android:layout_below="@id/kategoriproduk"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/deskripsiproduk"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="@string/deskripsi_produk"
+        style="@style/EditTextSet"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/hs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/harga_satuan"
+        style="@style/titleSubSet"
+        android:layout_below="@id/deskripsiproduk"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/hargasatuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/harga_satuan"
+        style="@style/EditTextSet"
+        android:inputType="number"
+        android:layout_below="@id/hs"
+        android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jumlah_produk"
+            style="@style/titleSubSet"
+            android:layout_below="@id/hargasatuan"
+            android:layout_marginTop="30dp"/>
+
+        <ImageButton
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add"
+            android:background="@android:color/transparent"
+            android:layout_below="@id/sp"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:id="@+id/count_products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            android:textSize="17sp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/sp"
+            android:layout_toEndOf="@+id/add_btn"/>
+
+        <ImageButton
+            android:id="@+id/min_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_remove"
+            android:background="@android:color/transparent"
+            android:layout_below="@id/sp"
+            android:layout_margin="15dp"
+            android:layout_toEndOf="@+id/count_products"/>
+
+        <TextView
+            android:id="@+id/mp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mitra_penjual"
+            style="@style/titleSubSet"
+            android:layout_below="@id/min_btn"
+            android:layout_marginTop="30dp"/>
+
+        <Spinner
+            android:id="@+id/mitrapenjual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mp"
+            style="@style/EditTextSet"
+            android:layout_marginTop="5dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            style="@style/CardViewPrimary"
+            android:layout_below="@id/mitrapenjual">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/simpan"
+                android:layout_gravity="center_horizontal"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@android:color/white"/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>

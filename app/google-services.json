@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "350235329104",
+    "project_id": "bayur-id",
+    "storage_bucket": "bayur-id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350235329104:android:0d2ea2711a31215902c755",
+        "android_client_info": {
+          "package_name": "com.project.ichwan.bayurid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350235329104-1i7bktu10nlbma8vav2ctepfqug7c4on.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUq6YM1oKONWJwMREznKOZ2Yk6NSOoyl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350235329104-1i7bktu10nlbma8vav2ctepfqug7c4on.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

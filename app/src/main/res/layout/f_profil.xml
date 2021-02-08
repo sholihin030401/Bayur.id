@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cnbfragment.ProfilFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <View
+        style="@style/headerContent"/>
+
+    <TextView
+        android:id="@+id/txpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profil_akun"
+        style="@style/titleSet"/>
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_account_circle"
+        android:layout_below="@id/txpa"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:id="@+id/username_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username_app"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_toEndOf="@id/img_profile"
+        android:layout_below="@id/txpa"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:id="@+id/choose_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username_app"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        android:layout_toEndOf="@id/img_profile"
+        android:layout_below="@id/username_profile"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/ak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/akun"
+        style="@style/titleSubSet"
+        android:layout_below="@id/img_profile"
+        android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/notif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notifikasi"
+            android:fontFamily="@font/montserrat_medium"
+            app:drawableStartCompat="@drawable/ic_notifications"
+            android:layout_below="@id/ak"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/notif"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/infoakun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/informasi_akun"
+            android:fontFamily="@font/montserrat_medium"
+            app:drawableStartCompat="@drawable/ic_info"
+            android:layout_below="@id/line1"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/infoakun"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/informasi"
+            style="@style/titleSubSet"
+            android:layout_below="@id/line2"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/syarat_ketentuan"
+            android:fontFamily="@font/montserrat_medium"
+            app:drawableStartCompat="@drawable/ic_terms"
+            android:layout_below="@id/info"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/terms"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kebijakan_privasi"
+            android:fontFamily="@font/montserrat_medium"
+            app:drawableStartCompat="@drawable/ic_privacy_user"
+            android:layout_below="@id/line3"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/policy"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/aboutour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tentang_kami"
+            android:fontFamily="@font/montserrat_medium"
+            app:drawableStartCompat="@drawable/ic_about_account"
+            android:layout_below="@id/line4"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <View
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/aboutour"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bantuan"
+            android:fontFamily="@font/montserrat_medium"
+            app:drawableStartCompat="@drawable/ic_help"
+            android:layout_below="@id/line5"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <View
+            android:id="@+id/line6"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/help"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/montserrat_medium"
+            app:drawableStartCompat="@drawable/ic_exit_to_app"
+            android:layout_below="@id/line6"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"/>
+
+    </RelativeLayout>
+</ScrollView>

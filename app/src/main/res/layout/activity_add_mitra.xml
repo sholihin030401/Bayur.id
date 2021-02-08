@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:id="@+id/activitymitraadd"
+    tools:context=".mitra.AddMitraActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            style="@style/headerContent"/>
+
+        <TextView
+            android:id="@+id/tp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tambah_mitra"
+            style="@style/titleSet"/>
+
+        <TextView
+            android:id="@+id/pg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pilih_gambar_foto_profil"
+            android:layout_below="@id/tp"
+            style="@style/titleSubSet"
+            android:layout_marginTop="70dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/add_img_mitra"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_camera_alt"
+            android:background="@drawable/edt_text"
+            android:padding="8dp"
+            android:layout_below="@id/pg"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/nm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_mitra_penjual"
+            style="@style/titleSubSet"
+            android:layout_below="@id/add_img_mitra"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/namamitra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/masukkan_nama_mitra"
+            style="@style/EditTextSet"
+            android:layout_below="@id/nm"
+            android:layout_marginTop="5dp"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/am"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alamat_mitra"
+            style="@style/titleSubSet"
+            android:layout_below="@id/namamitra"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/alamatmitra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/masukkan_alamat_mitra"
+            style="@style/EditTextSet"
+            android:layout_below="@id/am"
+            android:layout_marginTop="5dp"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/nh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_hp"
+            style="@style/titleSubSet"
+            android:layout_below="@id/alamatmitra"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/nohpmitra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/masukkan_no_hp"
+            android:inputType="phone"
+            style="@style/EditTextSet"
+            android:layout_below="@id/nh"
+            android:layout_marginTop="5dp"
+            android:importantForAutofill="no" />
+
+        <ImageButton
+            android:id="@+id/btn_add_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            android:layout_below="@id/nohpmitra"
+            android:contentDescription="@string/btnadd" />
+        <LinearLayout
+            android:id="@+id/layout_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/btn_add_item"
+            android:layout_below="@id/nohpmitra"
+            android:layout_marginTop="15dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/savemitra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            style="@style/CardViewPrimary"
+            android:layout_below="@id/layout_list">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/simpan"
+                android:layout_gravity="center_horizontal"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@android:color/white"/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</ScrollView>

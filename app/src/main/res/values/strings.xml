@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Bayur.id</string>
+    <string name="bayur_id">Bayur.id</string>
+    <string name="buat_akun_baru">Buat Akun Baru</string>
+    <string name="buatakun">Buat akun baru untuk masuk ke aplikasi</string>
+    <string name="masukkan_username">Masukkan Username</string>
+    <string name="konfirmasi_password">Konfirmasi Password</string>
+    <string name="masukkan_password">Masukkan Password</string>
+    <string name="masukkan_email">Masukkan Email</string>
+    <string name="buat_akun">Buat Akun</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="produk">Produk</string>
+    <string name="mitra">Mitra</string>
+    <string name="profil">Profil</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="username_app">Username App</string>
+    <string name="search">Search</string>
+    <string name="tempe_segar_pak_ahmad">Tempe Segar Pak Ahmad</string>
+    <string name="produk_terlaris">Produk Terlaris</string>
+    <string name="artikel_terbaru">Artikel Terbaru</string>
+    <string name="textartikel">Polinela Gandeng Petani di Desa Candipuro Lampung Tengah</string>
+    <string name="produk_saya">Produk Saya</string>
+    <string name="mitra_saya">Mitra Saya</string>
+    <string name="cari_mitra">Cari Mitra</string>
+    <string name="cari_produk">Cari Produk</string>
+    <string name="profil_akun">Profil Akun</string>
+    <string name="tambah_produk">Tambah Produk</string>
+    <string name="pilih_gambar">Pilih Gambar</string>
+    <string name="masukkan_nama_produk">Masukkan Nama Produk</string>
+    <string name="deskripsi_produk">Deskripsi Produk</string>
+    <string name="kategori_produk">Kategori Produk</string>
+    <string name="harga_satuan">Harga Satuan</string>
+    <string name="jumlah_produk">Jumlah Produk</string>
+    <string name="_0">0</string>
+    <string name="mitra_penjual">Mitra Penjual</string>
+    <string name="simpan">Simpan</string>
+    <string name="tambah_mitra">Tambah Mitra</string>
+    <string name="pilih_gambar_foto_profil">Pilih Gambar (Foto Profil)</string>
+    <string name="nama_mitra_penjual">Nama Mitra Penjual</string>
+    <string name="masukkan_nama_mitra">Masukkan Nama Mitra</string>
+    <string name="alamat_mitra">Alamat Mitra</string>
+    <string name="masukkan_alamat_mitra">Masukkan Alamat Mitra</string>
+    <string name="no_hp">No.HP</string>
+    <string name="masukkan_no_hp">Masukkan No.HP</string>
+    <string name="akun">Akun</string>
+    <string name="notifikasi">Notifikasi</string>
+    <string name="informasi_akun">Informasi Akun</string>
+    <string name="informasi">Informasi</string>
+    <string name="syarat_ketentuan"><![CDATA[Syarat & Ketentuan]]></string>
+    <string name="kebijakan_privasi">Kebijakan Privasi</string>
+    <string name="tentang_kami">Tentang Kami</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="logout">Logout</string>
+    <string name="produk_terbaru">Produk Terbaru</string>
+    <string name="semua">Semua</string>
+    <string name="sayur_segar">Sayur Segar</string>
+    <string name="sayur_olahan">Sayur Olahan</string>
+    <string name="buah_segar">Buah Segar</string>
+    <string name="buah_olahan">Buah Olahan</string>
+    <string name="lihat_selengkapnya">Lihat Selengkapnya</string>
+    <string name="nama_produk">Nama Produk</string>
+    <string name="stok">Stok</string>
+    <string name="update">Update</string>
+    <string name="hapus">Hapus</string>
+    <string name="produk_mitra">Produk Mitra</string>
+    <string name="saya_menyetujui_ketentuan_layanan_dan_kebijakan_privasi_pada_aplikasi_ini">Saya menyetujui ketentuan layanan dan kebijakan privasi pada aplikasi ini</string>
+    <string name="login">Login</string>
+    <string name="logintx">Masuk menggunakan akun yang sudah didaftarkan</string>
+    <string name="masuk_sebagai_penjual">Penjual</string>
+    <string name="pembeli">Pembeli</string>
+    <string name="masuk_sebagai">Masuk Sebagai :</string>
+    <string name="btnadd">btnAdd</string>
+
+    <string-array name="kategori_produk">
+        <item>Buah Segar</item>
+        <item>Sayur Segar</item>
+        <item>Sayur Olahan</item>
+        <item>Buah Olahan</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo_login"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bayur_id"
+        android:fontFamily="@font/raleway_logo"
+        android:textSize="26sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buat_akun_baru"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buatakun"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/montserrat_medium"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        style="@style/EditTextSet"
+        android:hint="@string/masukkan_username"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:inputType="textEmailAddress"
+        style="@style/EditTextSet"
+        android:hint="@string/masukkan_email"/>
+
+    <com.subhrajyoti.passwordview.PasswordView
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:cursorVisible="true"
+        style="@style/EditTextSet"
+        android:hint="@string/masukkan_password"/>
+
+    <com.subhrajyoti.passwordview.PasswordView
+        android:id="@+id/confirm_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:cursorVisible="true"
+        style="@style/EditTextSet"
+        android:hint="@string/konfirmasi_password"/>
+
+    <CheckBox
+        android:id="@+id/check_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saya_menyetujui_ketentuan_layanan_dan_kebijakan_privasi_pada_aplikasi_ini"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_margin="30dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnregist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        style="@style/CardViewPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buat_akun"
+            android:layout_gravity="center_horizontal"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@android:color/white"/>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
